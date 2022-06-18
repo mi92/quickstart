@@ -4,6 +4,8 @@ You have a great coding idea but are tired of manually setting up your Python da
 
 This minimalistic bash script automatically sets up your desired Python version and libraries, installs the Jupyter kernel such that you can start developing in your notebook after ~ 1 minute!  
 
+I intentionally kept this process in an editable bash script for quick and easy customization. 
+
 
 ### Dependencies:  
 This script depends on:  
@@ -33,3 +35,4 @@ They are installed when running the following command without specifying package
 #### Disclosures  
 
 This code is provided "as-is", and this repo does not claim to solve any problems that the underlying frameworks might have (e.g. trying to install scipy 1.6.1 with Python 3.10 versions). The goal is just to relieve you of the repeated effort to manually set up environments for new projects. 
+ 
