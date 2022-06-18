@@ -32,7 +32,8 @@ They are installed when running the following command without specifying package
 ```$ source quickstart.sh MY_PROJECT 3.9.5```   
 
 
-#### Disclosures  
+#### Disclaimer  
 
 This code is provided "as-is", and this repo does not claim to solve any problems that the underlying frameworks might have (e.g. trying to install scipy 1.6.1 with Python 3.10 versions). The goal is just to relieve you of the repeated effort to manually set up environments for new projects. 
- 
+
+Also, I have merely tested this on macOS, so I can't say that this will work for all operating systems. 
