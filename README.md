@@ -16,7 +16,7 @@ This script depends on:
 ### Usage:
 Assuming you have both pyenv and poetry installed (and added to your path), you can use quickstart the following way:   
 
-```$ source quickstart.sh MY_PROJECT 3.9.5 "pandas numpy matplotlib jupyter"```  
+```$ source quickstart.sh MY_PROJECT 3.9.5 "pandas numpy matplotlib"```  
 
 - `MY_PROJECT`: is your project's name, which name the project's directory and the jupyter kernel that will be installed. 
 - `3.9.5`: is your desired Python version (handled with pyenv) 
@@ -24,12 +24,20 @@ Assuming you have both pyenv and poetry installed (and added to your path), you 
 
 #### Package defaults:  
 
-Note that quickstart assumes that you wish to jump into a Jupyter notebook. Therefore, if you overwrite the default packages, make sure to add jupyter. 
+Note that quickstart assumes that you wish to jump into a Jupyter notebook, therefore this package is added automatically by default.  
 
-The default packages are: `"numpy pandas scikit-learn matplotlib jupyter"`.  
+The default packages are: `"numpy pandas scikit-learn matplotlib jupyter"`, where jupyter is added in dev mode (-D). 
 They are installed when running the following command without specifying packages:   
 
 ```$ source quickstart.sh MY_PROJECT 3.9.5```   
+
+
+#### Further hints:  
+
+If you wish to call quickstart anywhere, simply add the local path of this script to your ~/.bashrc or ~/.zshrc:  
+```export quickstart="/path/to/quickstart/quickstart.sh"```  
+Then you can call quickstart in any directory using:  
+```source $quickstart MY_PROJECT <further arguments here>```
 
 
 #### Disclaimer  
